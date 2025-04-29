@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package tugas9no2;
+
+/**
+ *
+ * @author FARIZ
+ */
+public class Tugas9No2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        MyDate tanggal1 = new MyDate(15, 8, 2015);
+        MyDate tanggal2 = new MyDate(1, 9, 2018);
+
+        Person orang = new Person("Budi", "Jl. Mawar No.1", "08123456789", "budi@email.com");
+        Student mhs = new Student("Ani", "Jl. Melati No.2", "08234567890", "ani@email.com", Student.TAHUN_KEDUA);
+        Employee pegawai = new Employee("Pak Toni", "Jl. Anggrek No.3", "08345678901", "toni@email.com", "Ruang 101", 5000000, tanggal1);
+        Faculty dosen = new Faculty("Bu Rina", "Jl. Kenanga No.4", "08456789012", "rina@email.com", "Gedung B", 7500000, tanggal2, "08.00 - 16.00", "Lektor");
+        Staff staf = new Staff("Pak Hadi", "Jl. Dahlia No.5", "08567890123", "hadi@email.com", "Administrasi", 4000000, tanggal1, "Sekretaris");
+
+        System.out.println(orang.toString());
+        System.out.println(mhs.toString());
+        System.out.println(pegawai.toString());
+        System.out.println(dosen.toString());
+        System.out.println(staf.toString());
+    }
+    
+}
