@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tugas9no2;
+
+/**
+ *
+ * @author FARIZ
+ */
+public class Faculty extends Employee {
+   private final String jamKerja;
+    private final String pangkat;
+
+    public Faculty(String nama, String alamat, String noHp, String email, String kantor, double gaji, MyDate tanggalSewa, String jamKerja, String pangkat) {
+        super(nama, alamat, noHp, email, kantor, gaji, tanggalSewa);
+        this.jamKerja = jamKerja;
+        this.pangkat = pangkat;
+    }
+
+   @Override
+    public String toString() {
+        return "Dosen: " + nama + " - Pangkat: " + pangkat + " - Jam Kerja: " + jamKerja;
+    }
+}
