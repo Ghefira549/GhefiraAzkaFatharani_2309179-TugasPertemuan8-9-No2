@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tugas9no2;
+
+/**
+ *
+ * @author FARIZ
+ */
+public class Staff extends Employee {
+    private final String gelar;
+
+    public Staff(String nama, String alamat, String noHp, String email, String kantor, double gaji, MyDate tanggalSewa, String gelar) {
+        super(nama, alamat, noHp, email, kantor, gaji, tanggalSewa);
+        this.gelar = gelar;
+    }
+
+    @Override
+    public String toString() {
+        return "Staf: " + nama + " - Gelar: " + gelar;
+    }
+}
