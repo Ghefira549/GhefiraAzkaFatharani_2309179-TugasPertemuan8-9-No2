@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tugas9no2;
+
+/**
+ *
+ * @author FARIZ
+ */
+public class Student extends Person {
+    public static final String BARU = "Mahasiswa Baru";
+    public static final String TAHUN_KEDUA = "Tahun Kedua";
+    public static final String JUNIOR = "Junior";
+    public static final String SENIOR = "Senior";
+
+    private final String status;
+
+    public Student(String nama, String alamat, String noHp, String email, String status) {
+        super(nama, alamat, noHp, email);
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Mahasiswa: " + nama + " - Status: " + status;
+    }
+}
